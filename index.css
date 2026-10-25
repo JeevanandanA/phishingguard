@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  --bg: #030711;
+  --panel: rgba(8, 16, 31, 0.88);
+  --panel-strong: rgba(4, 10, 22, 0.95);
+  --panel-soft: #0f1b33;
+  --border: rgba(92, 215, 255, 0.16);
+  --shadow: 0 20px 45px rgba(0, 8, 22, 0.45);
+  --app-bg: radial-gradient(circle at top left, rgba(0, 220, 255, 0.16), transparent 28%), radial-gradient(circle at top right, rgba(80, 120, 255, 0.18), transparent 35%), linear-gradient(135deg, #030711 0%, #07111f 45%, #0b1731 100%);
+  --text-main: #f3f7ff;
+  --text-soft: #9fb0c8;
+  --text-muted: #6f84a3;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-main);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+.app-shell.light {
+  --bg: #f3f7ff;
+  --panel: rgba(255, 255, 255, 0.92);
+  --panel-strong: rgba(250, 252, 255, 0.97);
+  --panel-soft: #eaf3ff;
+  --border: rgba(4, 44, 90, 0.1);
+  --shadow: 0 16px 40px rgba(4, 30, 70, 0.12);
+  --app-bg: radial-gradient(circle at top left, rgba(0, 193, 255, 0.2), transparent 28%), linear-gradient(135deg, #f7fbff 0%, #edf4ff 100%);
+  --text-main: #07111f;
+  --text-soft: #45556f;
+  --text-muted: #64748b;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text-main);
+  transition: background 240ms ease, color 240ms ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
